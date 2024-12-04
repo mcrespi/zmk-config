@@ -57,6 +57,15 @@
             >;
         };
 
+layer_3 {
+    bindings = <
+&mt MOD_LSHIFT &kp RPAR   &mt MOD_LCTRL &kp LPAR   &kp J   &trans  &trans  &trans  &trans  &trans          &trans  &trans
+&trans                                                     &trans     &trans       &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans                                                     &trans     &trans       &trans  &kp KP_NUMBER_5 &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                           &trans     &trans       &trans  &trans          &trans  &trans
+    >;
+};
+/*
         layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
@@ -66,7 +75,7 @@
             >;
         };
     };
-
+*/
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
