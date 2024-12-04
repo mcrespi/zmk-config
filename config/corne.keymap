@@ -18,6 +18,13 @@
         };
     };
 
+    behaviors {
+        tapping_term: tapping-term {
+            compatible = "zmk,tapping-term";
+            tapping-term-ms = <300>; /* Ajustar a 300 ms */
+        };
+    };
+
     macros {
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
