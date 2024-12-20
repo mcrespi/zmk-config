@@ -16,6 +16,11 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <12 29>;
         };
+
+        SUPRIMIR {
+            bindings = <&kp DEL>;
+            key-positions = <11 41>;
+        };
     };
 
     behaviors {
