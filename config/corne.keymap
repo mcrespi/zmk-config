@@ -87,7 +87,7 @@
             bindings = <
 &trans  &trans      &trans      &trans  &trans  &trans    &trans            &trans             &trans             &trans  &trans  &trans
 &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans  &trans    &trans            &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES  &trans  &trans  &trans
-&trans  &trans      &trans      &trans  &trans  &trans    &ext_power EP_ON  &ext_power EP_OFF  &trans             &trans  &trans  &trans
+&trans  &trans      &trans      &trans  &trans  &trans    &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans            &trans             &trans
             >;
         };
