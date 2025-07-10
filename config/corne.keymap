@@ -33,6 +33,13 @@
             bindings = <&kp LC(QMARK)>;
             label = "OPEN_QUESTION_MARK";
         };
+
+        slack_mute: slack_mute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp SPACE>;
+            label = "SLACK_MUTE";
+        };
     };
 
     keymap {
@@ -61,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL       &kp MINUS       &kp BACKSPACE
-&trans  &kp LEFT_ALT  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0    &kp UP_ARROW    &kp DELETE
-&trans  &kp C_PREV    &kp C_NEXT     &kp C_PLAY_PAUSE  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-                                     &trans            &trans                &trans                   &trans        &trans        &trans
+&slack_mute  &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL       &kp MINUS       &kp BACKSPACE
+&trans       &kp LEFT_ALT  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0    &kp UP_ARROW    &kp DELETE
+&trans       &kp C_PREV    &kp C_NEXT     &kp C_PLAY_PAUSE  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+                                          &trans            &trans                &trans                   &trans        &trans        &trans
             >;
         };
 
